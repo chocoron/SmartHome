@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/tope"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_centerInParent="false"
+            android:background="@color/prod"
+            android:padding="10dp">
+
+
+
+            <ImageView
+                android:id="@+id/pro"
+                android:layout_width="150dp"
+                android:layout_height="200px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/proimgtext" />
+
+            <ImageView
+                android:id="@+id/ava"
+                android:layout_width="200dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/pro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ava" />
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:onClick="back"
+                android:focusable="true"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/center_layout"
+            android:layout_width="367dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Имя пользователя"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_label"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:text="Электронная почта"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_label"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:id="@+id/addres_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:text="Адрес"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addres_label"
+                android:inputType="textEmailAddress"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/center_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="75dp">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:backgroundTint="#0B509F"
+                android:text="Сохранить" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/save"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="100dp"
+                android:backgroundTint="#AB0F19"
+                android:text="Выйти" />
+        </RelativeLayout>
+    </RelativeLayout>

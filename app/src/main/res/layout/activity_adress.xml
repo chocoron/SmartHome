@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginApp.Address">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/prod"
+        android:text="Добавить адрес "
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название улицы, д.\nНомер дома"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edit_adress"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:hint="Адрес"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textHome"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Сохранить"
+        app:cornerRadius="12dp"
+        android:textSize="17sp"
+        android:backgroundTint="@color/sacv"
+        android:onClick="save"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
